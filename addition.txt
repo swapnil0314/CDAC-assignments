@@ -1,0 +1,15 @@
+
+
+class Addition{
+	public static void main(String args[])
+{
+
+	int ino1 = 9 , ino2 = 3 , ians = 0;
+	
+	ians = ino1+ino2;
+
+	system.out.println("The addition of two numbers is : "+ians);
+
+
+}
+	}
