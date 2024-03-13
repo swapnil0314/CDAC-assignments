@@ -1,27 +1,32 @@
-//2. To find the average of the two given numbers and print.
-class A{
-int  Average(int ivalue1 , int ivalue2)
+import java.util.*;
+
+//2)Write a program that checks if a given year is a leap year or not using both if-else and
+//switch-case. 
+//
+public class assignment1_2 
 {
-    int iAvg = 0 ;
+    public static void CheckLeapYear(int ino)
+    {
+        if ((ino % 400 == 0) || (ino % 4 == 0)) 
+        {
+            System.out.println("It is a leap year");
+        }
+        else
+        {
+            System.out.println("It is not a leap year ");
+        }
 
-    iAvg = (ivalue1+ivalue2)/2 ;
+    }
 
-    return iAvg;
-}
-}
+    public static void main(String[] args) 
+    {
+        int ino = 0;
+        Scanner sobj = new Scanner(System.in);
+        System.out.println("Enter the year to check it is leap year or not  : ");
+        ino=sobj.nextInt();
 
-public class assignment1_2 {
-
-    public static void main(String Args[])
-{
-    int ino1 = 15 , ino2 = 20 , iRet=0 ;
-
-    A obj = new A();
-
-    iRet=obj.Average(ino1 , ino2);
-
-    System.out.println("The average of two number is : "+iRet);
-
-}
-  
+        CheckLeapYear(ino);
+        
+    }
+    
 }
